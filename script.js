@@ -183,7 +183,7 @@ const answers = [
 async function startVideo() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      const videoElement = document.getElementById('videoElement');
+      const videoElement = document.getElementById('webcam');
       videoElement.srcObject = stream;
     } catch (err) {
       console.error('Error accessing the webcam:', err);

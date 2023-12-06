@@ -220,6 +220,12 @@ function easterEggs(answer) {
         document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
 
         document.getElementById("audio").src = "islam.mp3";
+
+        document.getElementById("santa").src = "بابا نُويل.jpg";
+
+        setTimeout(() => {
+            document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg"; 
+        }, 15000);
     }
 
     else if (answer == "cheese") {

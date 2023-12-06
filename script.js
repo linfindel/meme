@@ -70,6 +70,8 @@ function setQuestion(number) {
         document.getElementById("audio").src = "outro-song.mp3";
         document.getElementById("card").innerHTML = "<h1>Now for your prize...</h1>";
 
+        document.getElementById("santa").style.filter = "blur(500px)";
+
         setTimeout(() => {
             document.getElementById("card").style.filter = "blur(500px)";
 
@@ -210,6 +212,12 @@ function easterEggs(answer) {
 
     else if (answer == "putin" || answer == "vladimir putin") {
         document.getElementById("audio").src = "wide-putin.mp3";
+
+        document.getElementById("santa").src = "https://media.cnn.com/api/v1/images/stellar/prod/221222182104-putin-1222.jpg?q=w_1110,c_fill";
+
+        setTimeout(() => {
+            document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg"; 
+        }, 15000);
     }
 
     else if (answer == "i'm sad" || answer == "im sad") {

@@ -1,5 +1,6 @@
 function checkAnswers(question) {
     var answer = document.getElementById("input").value;
+    answer = answer.toLowerCase();
 
     if (question == 1) {
         if (answer == "1752") {
@@ -8,8 +9,38 @@ function checkAnswers(question) {
     }
 
     else if (question == 2) {
-        if (answer == "lorem") {
+        if (answer == "france") {
             setQuestion(3);
+        }
+    }
+
+    else if (question == 3) {
+        if (answer == "islam") {
+            setQuestion(4);
+        }
+    }
+
+    else if (question == 4) {
+        if (answer == "putin" || answer == "vladimir putin") {
+            setQuestion(5);
+        }
+    }
+
+    else if (question == 5) {
+        if (answer == "i love miners" || answer == "i love minors") {
+            setQuestion(6);
+        }
+    }
+
+    else if (question == 6) {
+        if (answer == "cheese") {
+            setQuestion(7);
+        }
+    }
+
+    else if (question == 7) {
+        if (answer == "amogus") {
+            setQuestion(8);
         }
     }
 
@@ -21,10 +52,12 @@ document.body.addEventListener("keypress", () => {
 });
 
 function setQuestion(number) {
+    if (number == 2) {
+        document.getElementById("audio").src = "correct.mp3";
+    }
+
     if (number - 1 < questions.length) {
         document.getElementById("input").value = "";
-
-        document.getElementById("audio").src = "correct.mp3";
 
         console.log("Next question please...");
 
@@ -46,6 +79,14 @@ function setQuestion(number) {
         setTimeout(() => {
             document.getElementById("audio").src = "rickroll.mp3";
         }, 15250);
+    }
+
+    if (number == 6) {
+        document.getElementById("webcam").style.opacity = "1";
+    }
+
+    if (number == 7) {
+        document.getElementById("webcam").style.opacity = "0";
     }
 }
 
@@ -70,7 +111,7 @@ function easterEggs(answer) {
         document.getElementById("audio").src = "why-r-u-gay.mp3";
     }
 
-    else if (answer == "i love minors") {
+    else if (answer == "i love minors" || answer == "i love miners") {
         document.getElementById("audio").src = "fbi.mp3";
     }
 
@@ -106,7 +147,7 @@ function easterEggs(answer) {
         document.getElementById("audio").src = "cheese.mp3";
     }
 
-    else if (answer == "putin") {
+    else if (answer == "putin" || answer == "vladimir putin") {
         document.getElementById("audio").src = "wide-putin.mp3";
     }
 
@@ -121,5 +162,32 @@ function easterEggs(answer) {
 
 const questions = [
     "How old is Santa Claus?",
-    ""
+    "Where does Frosty hide the bodies?",
+    "What is a religion that doesn't celebrate Christmas?",
+    "Who was so unhappy with their Christmas presents that they invaded another sovereign country two months later?",
+    "What might a communist mine operator say about their workers?",
+    "I'm taking a festive picture of you. Say cheese.",
+    "What is the most common bastardisation of the name of a very merrily memed-upon game?",
 ]
+
+const answers = [
+    "1752",
+    "france",
+    "islam",
+    "putin",
+    "i love miners",
+    "cheese",
+    "amogus"
+]
+
+async function startVideo() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      const videoElement = document.getElementById('videoElement');
+      videoElement.srcObject = stream;
+    } catch (err) {
+      console.error('Error accessing the webcam:', err);
+    }
+}
+
+startVideo();

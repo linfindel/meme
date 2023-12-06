@@ -92,6 +92,8 @@ function setQuestion(number) {
 
 function easterEggs(answer) {
     if (answer == "amogus") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "sus.mp3";
         document.getElementById("santa").src = "https://1000logos.net/wp-content/uploads/2021/09/Among-Us-Symbol.png";
 
@@ -101,6 +103,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "sus") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "vine-boom.mp3";
 
         document.getElementById("santa").src = "https://media.tenor.com/IyweQyb3MhIAAAAC/the-rock-sus.gif";
@@ -111,10 +115,14 @@ function easterEggs(answer) {
     }
 
     else if (answer == "i love you" || answer == "i love u") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "sexy-sax.mp3";
     }
 
     else if (answer == "hello your computer has virus") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "india.mp3";
 
         document.getElementById("santa").src = "https://static.theprint.in/wp-content/uploads/2020/06/Arvind-Kumar.jpg?compress=true&quality=80&w=376&dpr=2.6";
@@ -125,6 +133,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "homophobic") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "why-r-u-gay.mp3";
 
         document.getElementById("santa").src = "https://miro.medium.com/v2/resize:fit:933/1*w4DxUy0PMoqeq25UXfyL0g@2x.jpeg";
@@ -135,6 +145,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "i love minors" || answer == "i love miners") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "fbi.mp3";
 
         document.getElementById("santa").src = "https://i.ytimg.com/vi/c46_iL2QqOE/hqdefault.jpg";
@@ -145,6 +157,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "bonk") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "bonk.mp3";
 
         document.getElementById("santa").src = "https://i.ytimg.com/vi/1v0zFknL1wQ/sddefault.jpg";
@@ -155,6 +169,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "boop") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "fnaf-boop.mp3";
 
         document.getElementById("santa").style.filter = "brightness(0.75) contrast(5000) saturate(500) invert()";
@@ -165,6 +181,8 @@ function easterEggs(answer) {
     }
 
     else if (answer == "noot noot") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "noot.mp3";
 
         document.getElementById("santa").src = "https://i.kym-cdn.com/entries/icons/original/000/040/642/terrifiednootnoot.jpg";
@@ -175,10 +193,14 @@ function easterEggs(answer) {
     }
 
     else if (answer == "monster") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "monsters-inc-bass.mp3";
     }
 
     else if (answer == "stalk") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "door-knocking.mp3";
 
         document.getElementById("santa").style.filter = "brightness(0.75) contrast(5000) saturate(500) invert()";
@@ -189,26 +211,38 @@ function easterEggs(answer) {
     }
 
     else if (answer == "i don't know"  || answer == "i dont know" || answer == "idk") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "oh-crap.mp3";
     }
 
     else if (answer == "islam") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "islam.mp3";
     }
 
     else if (answer == "cheese") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "cheese.mp3";
     }
 
     else if (answer == "putin" || answer == "vladimir putin") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "wide-putin.mp3";
     }
 
     else if (answer == "i'm sad" || answer == "im sad") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "depression.mp3";
     }
 
     else if (answer == "france") {
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+        
         document.getElementById("audio").src = "france.mp3";
 
         document.getElementById("santa").src = "père-noël.jpg";

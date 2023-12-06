@@ -5,11 +5,15 @@ function checkAnswers(question) {
         if (answer == "1752") {
             setQuestion(2);
         }
+    }
 
-        else {
-            easterEggs(answer);
+    else if (question == 2) {
+        if (answer == "lorem") {
+            setQuestion(3);
         }
     }
+
+    easterEggs(answer);
 }
 
 document.body.addEventListener("keypress", () => {
@@ -18,6 +22,10 @@ document.body.addEventListener("keypress", () => {
 
 function setQuestion(number) {
     console.log("Next question please...");
+
+    document.getElementById("question-number").innerText = `Question ${number}`;
+    document.getElementById("question").innerText = questions[number - 1];
+    document.getElementById(`q${number - 1}`).oninput = `checkAnswers(${number})`;
 }
 
 function easterEggs(answer) {
@@ -89,3 +97,8 @@ function easterEggs(answer) {
         document.getElementById("audio").src = "france.mp3";
     }
 }
+
+const questions = [
+    "How old is Santa Claus?",
+    ""
+]

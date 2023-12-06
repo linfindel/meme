@@ -165,7 +165,7 @@ const questions = [
     "Where does Frosty hide the bodies?",
     "What is a religion that doesn't celebrate Christmas?",
     "Who was so unhappy with their Christmas presents that they invaded another sovereign country two months later?",
-    "What might a communist mine operator say about their workers?",
+    "What festive phrase might a communist mine overseer use to express their admiration for their workers?",
     "I'm taking a festive picture of you. Say cheese.",
     "What is the most common bastardisation of the name of a very merrily memed-upon game?",
 ]

@@ -1,5 +1,5 @@
 function checkAnswers(question) {
-    var answer = document.getElementById(`q${question}`).value;
+    var answer = document.getElementById("input").value;
 
     if (question == 1) {
         if (answer == "1752") {
@@ -17,15 +17,36 @@ function checkAnswers(question) {
 }
 
 document.body.addEventListener("keypress", () => {
-    document.getElementById("audio").src = "discord-join.mp3";
+    document.getElementById("audio").src = "discord.mp3";
 });
 
 function setQuestion(number) {
-    console.log("Next question please...");
+    if (number - 1 < questions.length) {
+        document.getElementById("input").value = "";
 
-    document.getElementById("question-number").innerText = `Question ${number}`;
-    document.getElementById("question").innerText = questions[number - 1];
-    document.getElementById(`q${number - 1}`).oninput = `checkAnswers(${number})`;
+        document.getElementById("audio").src = "correct.mp3";
+
+        console.log("Next question please...");
+
+        document.getElementById("question-number").innerText = `Question ${number}`;
+        document.getElementById("question").innerText = questions[number - 1];
+        document.getElementById("input").oninput = function () {checkAnswers(number)};
+    }
+
+    else {
+        document.getElementById("audio").src = "outro-song.mp3";
+        document.getElementById("card").innerHTML = "<h1>Now for your prize...</h1>";
+
+        setTimeout(() => {
+            document.getElementById("card").style.filter = "blur(500px)";
+
+            document.getElementById("audio").src = ""; 
+        }, 15200);
+
+        setTimeout(() => {
+            document.getElementById("audio").src = "rickroll.mp3";
+        }, 15250);
+    }
 }
 
 function easterEggs(answer) {

@@ -37,7 +37,7 @@ function easterEggs(answer) {
         document.getElementById("audio").src = "vine-boom.mp3";
     }
 
-    else if (answer == "i love you") {
+    else if (answer == "i love you" || answer == "i love u") {
         document.getElementById("audio").src = "sexy-sax.mp3";
     }
 

@@ -44,6 +44,12 @@ function checkAnswers(question) {
         }
     }
 
+    else if (question == 8) {
+        if (answer == "f") {
+            setQuestion(9);
+        }
+    }
+
     easterEggs(answer);
 }
 
@@ -80,6 +86,9 @@ function setQuestion(number) {
 
         setTimeout(() => {
             document.getElementById("audio").src = "rickroll.mp3";
+
+            document.body.style.backgroundImage = "url('https://c.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif')";
+            document.body.style.backgroundSize = "cover";
         }, 15250);
     }
 
@@ -243,6 +252,7 @@ const questions = [
     "What festive phrase might a communist mine overseer use to express their admiration for their workers?",
     "I'm taking a festive picture of you. Say cheese.",
     "What is the most common bastardisation of the name of a very merrily memed-upon game?",
+    "Type F in chat"
 ]
 
 const answers = [
@@ -252,7 +262,8 @@ const answers = [
     "putin",
     "i love miners",
     "cheese",
-    "amogus"
+    "amogus",
+    "f"
 ]
 
 async function startVideo() {

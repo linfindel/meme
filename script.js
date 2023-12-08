@@ -144,7 +144,7 @@ function easterEggs(answer) {
 
         setTimeout(() => {
             document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg"; 
-        }, 8000);
+        }, 6000);
     }
 
     else if (answer == "i love minors" || answer == "i love miners") {

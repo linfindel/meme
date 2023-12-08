@@ -54,24 +54,26 @@ function checkAnswers(question) {
 }
 
 let lastKeypressTime = 0;
+let bingChilling = false;
 const typingSpeedThreshold = 100;
 
 document.body.addEventListener("keypress", () => {
     const currentTime = new Date().getTime();
     const timeSinceLastKeypress = currentTime - lastKeypressTime;
 
-    if (timeSinceLastKeypress < typingSpeedThreshold) {
+    if (timeSinceLastKeypress < typingSpeedThreshold && !bingChilling) {
         document.getElementById("audio").src = "chill.mp3";
+        document.getElementById("input").setAttribute("inert", "true");
 
-        document.getElementById("input").inert = "true";
+        bingChilling = true;
 
         setTimeout(() => {
-            document.getElementById("input").removeAttribute("inert"); 
-            document.getElementById("input").focus(); 
+            bingChilling = false;
+            
+            document.getElementById("input").removeAttribute("inert");
+            document.getElementById("input").focus();
         }, 1000);
-    }
-    
-    else {
+    } else if (!bingChilling) {
         document.getElementById("audio").src = "discord.mp3";
     }
 

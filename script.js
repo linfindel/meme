@@ -53,8 +53,29 @@ function checkAnswers(question) {
     easterEggs(answer);
 }
 
+let lastKeypressTime = 0;
+const typingSpeedThreshold = 100;
+
 document.body.addEventListener("keypress", () => {
-    document.getElementById("audio").src = "discord.mp3";
+    const currentTime = new Date().getTime();
+    const timeSinceLastKeypress = currentTime - lastKeypressTime;
+
+    if (timeSinceLastKeypress < typingSpeedThreshold) {
+        document.getElementById("audio").src = "chill.mp3";
+
+        document.getElementById("input").inert = "true";
+
+        setTimeout(() => {
+            document.getElementById("input").removeAttribute("inert"); 
+            document.getElementById("input").focus(); 
+        }, 1000);
+    }
+    
+    else {
+        document.getElementById("audio").src = "discord.mp3";
+    }
+
+    lastKeypressTime = currentTime;
 });
 
 function setQuestion(number) {

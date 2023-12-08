@@ -268,5 +268,11 @@ async function startVideo() {
 startVideo();
 
 function cheat(question) {
-    console.log(answers[question - 1]);
+    if (question == "all") {
+        console.log(answers);
+    }
+
+    else {
+        console.log(answers[question - 1]);
+    }
 }

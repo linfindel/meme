@@ -289,6 +289,10 @@ function easterEggs(answer) {
 
         document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
     }
+
+    else if (answer == "chonk") {
+        location.href = 'chonk.html';
+    }
 }
 
 const questions = [
@@ -338,3 +342,7 @@ function cheat(question) {
         console.log(answers[question - 1]);
     }
 }
+
+document.getElementById("input").addEventListener("blur", () => {
+    document.getElementById("input").focus()
+})

@@ -293,6 +293,12 @@ function easterEggs(answer) {
     else if (answer == "chonk") {
         location.href = 'chonk.html';
     }
+
+    else if (answer == "pissing off oliver") {
+        document.getElementById("audio").src = "whistle.mp3";
+
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+    }
 }
 
 const questions = [

@@ -310,7 +310,7 @@ const questions = [
     "I'm taking a festive picture of you. Say cheese.",
     "What is the most common bastardisation of the name of a very merrily memed-upon game?",
     "What is the most popular desktop operating system at Christmas?",
-    "What is the festive eeling that you have been here before called?",
+    "What is the festive feeling that you have been here before called?",
     "Type F in chat"
 ]
 

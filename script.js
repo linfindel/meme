@@ -45,8 +45,14 @@ function checkAnswers(question) {
     }
 
     else if (question == 8) {
-        if (answer == "f") {
+        if (answer == "windows") {
             setQuestion(9);
+        }
+    }
+
+    else if (question == 9) {
+        if (answer == "f") {
+            setQuestion(10);
         }
     }
 
@@ -265,6 +271,12 @@ function easterEggs(answer) {
             document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg"; 
         }, 15000);
     }
+
+    else if (answer == "windows") {
+        document.getElementById("audio").src = "startup.mp3";
+
+        document.getElementById("santa").src = "https://media.elfontheshelf.com/wp-content/uploads/2020/10/Learn-10-Fun-Facts-About-Santa_2.jpg";
+    }
 }
 
 const questions = [
@@ -275,6 +287,7 @@ const questions = [
     "What festive phrase might a communist mine overseer use to express their admiration for their workers?",
     "I'm taking a festive picture of you. Say cheese.",
     "What is the most common bastardisation of the name of a very merrily memed-upon game?",
+    "What is the most popular desktop operating system?",
     "Type F in chat"
 ]
 
@@ -286,6 +299,7 @@ const answers = [
     "i love miners",
     "cheese",
     "amogus",
+    "windows",
     "f"
 ]
 

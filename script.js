@@ -359,7 +359,7 @@ document.getElementById("input").addEventListener("blur", () => {
     document.getElementById("input").focus()
 })
 
-const turretFiles = ["are-you-still-there.mp3", "excuse-me.mp3", "i-dont-hate-you.mp3", "i-see-you.mp3", "searching.mp3", "whos-there.mp3"];
+const turretFiles = ["are-you-still-there.mp3", "excuse-me.mp3", "hello.mp3", "i-dont-hate-you.mp3", "i-see-you.mp3", "searching.mp3", "whos-there.mp3"];
 
 setInterval(() => {
     var file = turretFiles[Math.floor(Math.random() * turretFiles.length)];
